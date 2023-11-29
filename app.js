@@ -8,7 +8,7 @@ function startTimer() {
 
   timerId = setInterval(() => {
     time--
-    if (time == 0) location.href = "index.html"
+    if (time == 0) location.href = "./index.html"
     timer.innerHTML = time
   }, 1000)
 
