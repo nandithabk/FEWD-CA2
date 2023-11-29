@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Hangman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="start">
-        <h1>HANGMAN</h1>
-        <form id="login page">
-        <label for="name">Enter your name:</label><br>
-        <input type="text" id="name" name="name" required>
-        <br><br>
-        <label for="name">Enter username:</label><br>
-        <input type="text" id="name" name="name" required>
-        <br><br>
-        <button><a href="/index.html">Start</a></button>
-        </form>
+    <div class="hangman-container">
+        <div id="time-display" class="centered"></div>
+        <div class="hangman-stage">
+            <img src="#" draggable="false" alt="hangman-img">
+            <h1>Hangman Game</h1>
+        </div>
+        <div class="game-overlay">
+            <div class="overlay-content">
+                <img src="#" alt="gif">
+                <h4>Game Over!</h4>
+                <p>The correct word was: <b>rainbow</b></p>
+                <button class="restart-btn">Play Again</button>
+            </div>
+        </div>
+        <div class="hangman-grid">
+            <ul class="word-letters"></ul>
+            <h4 class="hint-description">Hint: <b></b></h4>
+            <h4 class="incorrect-guesses">Incorrect guesses: <b></b></h4>
+            <div class="keyboard-layout"></div>
+        </div>
     </div>
+
+    <script src="app.js"></script>
+    <script src="wordhint.js"></script>
 </body>
 </html>
