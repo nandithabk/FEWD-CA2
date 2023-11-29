@@ -117,7 +117,7 @@ const wordList = [
         word: "universe",
         hint: "All existing matter, space, and time as a whole."
     },
-    
+
     {
         word: "piano",
         hint: "A musical instrument played by pressing keys that cause hammers to strike strings."
@@ -211,4 +211,4 @@ const wordList = [
         word: "brilliant",
         hint: "Exceptionally clever, talented, or impressive."
     },
-];
+]
